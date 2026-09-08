@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Tooba ❤️</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 20px 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Noto Nastaliq Urdu';
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.94);
+            padding: 30px 20px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(214, 51, 132, 0.25);
+            max-width: 500px;
+            width: 100%;
+            z-index: 10;
+            backdrop-filter: blur(8px);
+            border: 2px solid #fff;
+        }
+
+        .picture-container {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .picture-card {
+            position: relative;
+            width: 100%;
+            max-width: 320px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            border: 3px solid #fff;
+        }
+
+        .picture-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .photo-overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(214, 51, 132, 0.75);
+            color: white;
+            padding: 6px 0;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        h1 { color: #d63384; font-size: 1.8rem; margin-bottom: 15px; }
+
+        .gif-box {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 15px;
+            margin: 15px auto;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .message-box {
+            color: #333;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            text-align: center;
+            background: rgba(255, 240, 245, 0.85);
+            padding: 20px;
+            border-radius: 18px;
+            border-left: 4px solid #ff4b2b;
+            border-right: 4px solid #ff4b2b;
+            margin-bottom: 20px;
+        }
+
+        .urdu-text {
+            font-size: 1.25rem;
+            color: #b01859;
+            direction: rtl;
+            margin: 15px 0;
+            line-height: 2;
+        }
+
+        .english-text {
+            font-size: 1rem;
+            color: #4a4a4a;
+            margin: 15px 0;
+            font-style: italic;
+            text-align: left;
+            background: #ffffff99;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .highlight-line { color: #ff4b2b; font-weight: bold; margin: 10px 0; }
+
+        /* Kiss Counter Section */
+        .kiss-section {
+            background: #ffe6ea;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px 0;
+            border: 2px dashed #ff416c;
+        }
+
+        .kiss-btn {
+            background: linear-gradient(45deg, #ff007f, #ff416c);
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(255, 0, 127, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .kiss-btn:active { transform: scale(0.95); }
+
+        .kiss-count {
+            font-size: 1.5rem;
+            color: #d63384;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn-yes {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 14px 35px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-yes:hover { transform: scale(1.08); }
+
+        .heart {
+            position: fixed;
+            color: #ff4b2b;
+            font-size: 22px;
+            animation: float 4s linear infinite;
+            bottom: -30px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-105vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="card">
+        
+        <div class="picture-container">
+            <div class="picture-card">
+                <img src="https://i.postimg.cc/mD8Zc4qR/ofc.jpg" alt="For Our Tooba ❤️">
+                <div class="photo-overlay">For Our Tooba ❤️</div>
+            </div>
+            <div class="picture-card">
+                <img src="https://i.postimg.cc/44rGvC47/hand.jpg" alt="Our Special Moment ❤️">
+                <div class="photo-overlay">Our Special Moment ❤️</div>
+            </div>
+        </div>
+
+        <h1>Tooba Muzamil Rind ❤️</h1>
+        
+        <img class="gif-box" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW9qNXp1YnpqdzhqYTNzazQ5NmRvdWNnMHp0NXdhdmd0OTdxZDNuYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L9543E85vIYlhJvW45/giphy.gif" alt="Sad Bear">
+
+        <div class="message-box">
+            <p class="highlight-line">Hmara dil nhi lag rha ap k bina, mera putrr mera bachaa merii mithii 🥺❤️</p>
+            
+            <div class="urdu-text">
+                تم روٹھو تو دل کو قرار کہاں آتا ہے،<br>
+                تم مسکرا دو تو میرا ہر غم چلا جاتا ہے۔ ❤️<br><br>
+                توبہ مزمل، تم سے ہی میری ہر خوشی کا راستہ ہے،<br>
+                مان جاؤ نا، تمہارے بغیر یہ دل ذرا اداس سا ہے۔ 🥺❤️
+            </div>
+
+            <div class="english-text">
+                "You’re the person I’m most comfortable being myself with—the one who supports me through my worst, handles me with patience, and takes care of me with a love that feels like home. ❤️"
+            </div>
+
+            <p class="highlight-line">Koi mjh ko youn mila h jysy banjary ko ghar 🥺❤️<br>
+            Is ghar ko phr sy banjara nahi kro putrr mera bacha mera 🥺❤️</p>
+
+            <div class="urdu-text">
+                ت سے توبہ، م سے مزمل، اور جب دونوں ملیں تو بنتا ہے تم،<br>
+                نہ میں ہوں، بس تم ہی تم ہو، میری ہر دعا، میرا ہر غم۔ ❤️<br><br>
+                آپ کا بھرم ہم کیسے توڑ سکتے ہیں، آپ تو ہماری عزت ہیں،<br>
+                اس بار معاف کر دیں، ہمیں بس آپ کے اعتبار کی ضرورت ہے۔<br><br>
+                آپ کہتی ہیں مرد ایک جیسے ہوتے ہیں، شاید آپ نے ویسے ہی دیکھے ہوں،<br>
+                مگر ہمیں ایک موقع دیں، ہم ثابت کریں گے کہ مرد اعتبار کے قابل بھی ہوتے ہیں۔<br><br>
+                بس ایک سگریٹ سے اپنے مزمل کو برا مت سمجھیں،<br>
+                ہم آپ کے ہیں، آپ کے مزمل ہیں… بس اتنا سا یقین رکھیں۔ 🥺❤️
+            </div>
+        </div>
+
+        <!-- Kiss GIF -->
+        <img class="gif-box" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzRxeXBxeTRmOW44bzBwNDRscWRyYmt5M3A3MnAxc3p5ODR5OHd4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/G3va31oEEnIkM/giphy.gif" alt="Cute Kisses GIF">
+
+        <!-- Interactive Kiss Counter -->
+        <div class="kiss-section">
+            <h3 style="color: #d63384; margin-top:0;">Send Kisses to Muzamil 💋</h3>
+            <p style="color: #555; font-size:0.95rem;">Button dabain aur jitni marzi kisses bhejin! 😘</p>
+            <button class="kiss-btn" onclick="addKiss()">Send A Kiss 💋</button>
+            <div class="kiss-count" id="countDisplay">0 Kisses Sent 💋</div>
+        </div>
+
+        <div style="margin-top: 25px;">
+            <button class="btn-yes" onclick="forgiveMe()">Maaf Kar Diya ❤️</button>
+        </div>
+    </div>
+
+    <script>
+        let kissCount = 0;
+        function addKiss() {
+            kissCount++;
+            document.getElementById('countDisplay').innerText = kissCount + " Kisses Sent 💋";
+            
+            // Pop heart on kiss button click
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '💋';
+            heart.style.left = Math.random() * 80 + 10 + 'vw';
+            heart.style.animationDuration = '2.5s';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 2500);
+        }
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            const emojis = ['❤️', '💖', '🥺', '🌸', '✨', '💋', '🌹'];
+            heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        }
+        setInterval(createHeart, 300);
+
+        function forgiveMe() {
+            document.getElementById('card').innerHTML = `
+                <img class="gif-box" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW5oNjhnc3Rtb3Y1d2V0YnY4NXE2ZnZwbXQ0YnZ3MGx1Y3hxcXp1eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lTQF0ODLLjhza/giphy.gif" alt="Cuddle GIF">
+                <h1 style="color: #ff4b2b; font-size: 2rem;">Yay! Thank You So Much, Tooba! 🎉💖</h1>
+                <p style="color: #4a4a4a; font-size: 1.15rem; line-height: 1.7; font-weight: 500;">
+                    Aap ke is faisle ke liye shukriya! Main aap ka aitbaar kabhi nahi todunga or apko 12 bachy dunga or apko sahi wala nak m dam krengy. <br><br>
+                    <strong>Aapka Muzamil hamesha aapka hi rahega! 🥰🌹✨</strong>
+                </p>
+                <img class="gif-box" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Zsd2tzYmx0NWpucGdzbWRreTZzeTZrb2hhNXo4b3QzbXZoZjR3dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif" alt="Happy Cat">
+            `;
+        }
+    </script>
+</body>
+</html>
